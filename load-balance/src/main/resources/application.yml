@@ -8,5 +8,4 @@ spring:
 
 server-a:
   ribbon:
-    listOfServers: 127.0.0.1:8001
-    #,127.0.0.1:8002
+    listOfServers: 127.0.0.1:8001, 127.0.0.1:8002

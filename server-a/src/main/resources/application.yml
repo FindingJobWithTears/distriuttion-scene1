@@ -2,7 +2,12 @@ spring:
   profiles:
     active: a
   rabbitmq:
-    host: 192.168.220.133
+    host: 47.105.58.171
     port: 5672
     username: admin
-    password: admin
+    password: 123456
+  redis:
+    database: 0
+    password: 123456
+    host: 47.105.58.171
+    port: 6379

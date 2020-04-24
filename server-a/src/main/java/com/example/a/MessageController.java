@@ -23,7 +23,7 @@ public class MessageController {
 
   @GetMapping("/serverB")
   public String serverB(String msg) {
-    String timestamp = System.currentTimeMillis() + name + " " +msg;
+    String timestamp = name + "$" + System.currentTimeMillis() + ":" + msg;
 
     GuardedObject<String> guardedObject = GuardedObject.create(timestamp);
 

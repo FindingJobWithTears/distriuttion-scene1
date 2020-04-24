@@ -8,6 +8,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.Predicate;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author dxd

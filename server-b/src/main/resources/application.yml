@@ -2,9 +2,9 @@ spring:
   application:
     name: server-b
   rabbitmq:
-    host: 192.168.220.133
+    host: 47.105.58.171
     port: 5672
     username: admin
-    password: admin
+    password: 123456
 server:
   port: 8010

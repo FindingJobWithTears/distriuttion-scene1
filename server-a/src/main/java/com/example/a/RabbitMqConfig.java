@@ -1,8 +1,9 @@
-package com.example.b.mq;
+package com.example.a;
 
 
 
 import org.springframework.amqp.core.Queue;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,15 +14,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMqConfig {
 
+  @Value("${spring.application.name}")
+  private String name;
+
   @Bean
   public Queue receiver() {
-   return new Queue("receive", false);
+   return new Queue(name, false);
   }
-
-  @Bean
-  public Queue sender() {
-    return new Queue("send", false);
-  }
-
 
 }
